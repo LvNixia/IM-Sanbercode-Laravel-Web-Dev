@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akun Baru</title>
+</head>
+<body>
+    <h1>Buat Akun Baru!</h1>
+    <h3>Formulir Pendaftaran</h3>
+    <form action="welcome.html" method="post">
+    <label for="nama_depan">Nama depan</label><br>
+    <input type="text" name="nama_depan" id="nama_depan"><br><br>
+    <label for="nama_belakang">Nama belakang</label><br>
+    <input type="text" name="nama_belakang" id="nama_belakang"><br><br>
+    <label for="kelamin">Kelamin:</label><br>
+    <input type="radio" name="kelamin" id="laki-laki" value="laki-laki">Laki-laki<br>
+    <input type="radio" name="kelamin" id="perempuan" value="perempuan">Perempuan<br>
+    <input type="radio" name="kelamin" id="lainnya" value="lainnya">Lainnya<br><br>
+    <label for="kebangsaan">Kebangsaan:</label><br>
+    <select name="kebangsaan" id="kebangsaan">
+        <option value="indonesia">Indonesia</option>
+        <option value="malaysia">Malaysia</option>
+        <option value="singapura">Singapura</option>
+        <option value="australia">Australia</option>
+        <option value="lainnya">Lainnya</option>
+    </select><br><br>
+    <label for="bahasa">Bahasa yang digunakan:</label><br>
+    <input type="checkbox" name="bahasa" id="indonesia" value="indonesia">Bahasa Indonesia<br>
+    <input type="checkbox" name="bahasa" id="inggris" value="inggris">Bahasa Inggris<br>
+    <input type="checkbox" name="bahasa" id="lainnya" value="lainnya">Lainnya<br><br>
+    <label for="bio">Bio:</label><br>
+    <textarea name="bio" id="bio" rows="4" cols="50"></textarea><br><br>
+    <input type="reset" value="Reset">
+    <input type="submit" value="Daftar">
+    </form>
+</body>
+</html>

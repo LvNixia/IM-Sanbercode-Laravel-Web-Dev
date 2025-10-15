@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        tb, th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h4>Satu kolom</h4>
+    <table border="1">
+        <tr>
+            <td>100</td>
+        </tr>
+    </table>
+    <h4>Satu baris dan tiga kolom</h4>
+    <table border="1">
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+        </tr>
+    </table>
+    <h4>Dua baris dan tiga kolom</h4>
+    <table border="1">
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>500</td>
+            <td>600</td>
+        </tr>
+    </table>
+    <h4>Menu</h4>
+    <table border="1" width="50%">
+        <tr>
+            <th>Nomor</th>
+            <th>Nama menu</th>
+            <th>Harga</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nasi goreng</td>
+            <td>15.000</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Kwetiau</td>
+            <td>16.000</td>
+        </tr>
+        </table>
+        <h4>Cell that spans two columns</h4>
+        <table>
+            <tr>
+                <th>Nama</th>
+                <th colspan="2">Nomor</th>
+            </tr>
+            <td>Akbar Ramadhan</td>
+            <td>0852 9478 0699</td>
+            <td>0852 2334 4556</td>
+        </table>
+        <h4>Cell that spans two columns</h4>
+        <table border="1">
+            <tr>
+                <th>Nama Lengkap</th>
+                <td>Akbar Ramadhan</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Nomor Telepon</th>
+                <td>0852 9478 0699</td>
+            </tr>
+            <tr>
+                <td>0852 2334 4556</td>
+            </tr>
+        </table>
+</body>
+</html>

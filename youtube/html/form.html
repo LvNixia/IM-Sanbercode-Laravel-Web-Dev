@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <!--* Catatan Form
+    - name="registrasi" Nama form, bisa diisi sesuai kebutuhan.
+    - action="" URL tujuan saat form disubmit, kosong berarti submit ke halaman yang sama.
+    - enctype="" Jenis encoding data saat form disubmit, defaultnya adalah "application/x-www-form-urlencoded".
+    - method="get" Metode pengiriman data, bisa "get" atau "post".
+    - target="" Tempat membuka halaman hasil submit, defaultnya adalah "_self" (halaman yang sama).
+    -->
+    <form name="registrasi" action="" enctype="" method="get" target="">
+        <!--* Catatan Input Form
+        - <label> digunakan untuk memberi keterangan pada input form.
+        - for="nama" menghubungkan label ini dengan elemen input yang memiliki id="nama", jadi ketika pengguna mengklik teks "Nama:", kursor otomatis fokus ke kotak input.
+        - <input> digunakan untuk membuat berbagai jenis input form.
+        - type="text" menentukan jenis input, dalam hal ini adalah input teks biasa.
+        - id="nama" memberikan identitas unik pada elemen input.
+        - name="nama" memberikan nama pada elemen input, yang akan digunakan sebagai kunci saat data form dikirim ke server.
+        - required → memastikan input ini harus diisi sebelum form bisa disubmit
+        -->
+        <label for="tanggal">Tanggal:</label><br>
+        <input type="month" id="tanggal" name="tanggal" required value="2025-10"><br>
+
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
