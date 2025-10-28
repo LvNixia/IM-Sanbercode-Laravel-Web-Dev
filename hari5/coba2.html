@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="menu-makanan"></div>
+    <script>
+        let menuMakanan = document.getElementById("menu-makanan");
+        // menambah teks
+        menuMakanan.innerHTML = "ini adalah menu makanan";
+
+        // menambah element html
+        menuMakanan.innerHTML = "<h2>Nasi Goreng</h2>"
+
+        // menambah banyak element HTML dengan banyak baris dapat gunakan tanda petik ``
+        menuMakanan.innerHTML = 
+        `<h2>Menu Makanan</h2>
+        <ul>
+            <li class="list-menu">Nasi Goreng</li>
+            <li class="list-menu">Mie Goreng</li>
+            <li class="list-menu">Kwetiau Goreng</li>
+            <li class="list-menu">Bihun Goreng</li>
+        </ul>
+        `
+
+    </script>
+</body>
+</html>

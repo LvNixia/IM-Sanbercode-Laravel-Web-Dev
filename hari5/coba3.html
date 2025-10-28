@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Coba Kondisional</h1>
+    <form action="#" id="formConditional">
+        <input type="text" id="name" placeholder="nama" required>
+        <input type="text" id="role" placeholder="peran" required>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <div id="jawaban"></div>
+    <script>
+        var form = document.getElementById("formConditional")
+        var jawaban = document.getElementById("jawaban")
+
+        form.addEventListener("submit", function(event){
+            event.preventDefault()
+            var name = document.getElementById("name").value
+            var role = document.getElementById("role").value
+            console.log(name,role)
+        })
+    </script>
+</body>
+</html>
